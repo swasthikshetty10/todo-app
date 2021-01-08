@@ -7,7 +7,7 @@ from django.http import HttpResponseRedirect
 
 # Create your views here.
 def home(request):
-    todo_items = Todo.objects.all().order_by("-added_date")  # it will order by added date
+    todo_items = Todo.objects.all().order_by("added_date")  # it will order by added date
     return render(request, 'to_do/index.html', {
         "todo_items": todo_items,
     })
