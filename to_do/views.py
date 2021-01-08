@@ -16,6 +16,8 @@ def home(request):
 @csrf_exempt
 def add_todo(request):  # post method is used to get data  from index.html
     current_date = timezone.now()
+    print(current_date)
+    print(type(current_date))
     content = request.POST['content']
     created_obj = Todo.objects.create(added_date=current_date, text=content)  # creating object
     length_of_todos = Todo.objects.all().count()  # returns no of element in database
