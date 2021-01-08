@@ -3,3 +3,16 @@
     background: url("https://i.pinimg.com/736x/37/6e/2d/376e2dab5652d6e1751e25cbcb52f2d5.jpg") no-repeat center center;
 }
 
+.botnav {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  @media print {
+    .container {
+      width: auto;
+    }
+  }
